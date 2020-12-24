@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main-box {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 3em 2em 0em 2.5em;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, .4);
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#time {
+    position: absolute;
+    top: 1%;
+    border-radius: 10px;
+    /* background-color: aquamarine; */
+    padding: 0em 2em 0em 2em;
+    font-size: 1.5rem;
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#time-text {
+    font-size: 8vw;
+    color: white;
+    overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+#textfield {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid grey;
+    transition: 0.2s ease-in-out;
+    padding: 0.5em 0.2em;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#textfield:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(39, 39, 160);
+}
+
+#clearIcon {
+    cursor: pointer;
+}
+
+#todo-text {
+    font-size: 1rem;
+    min-width: 0.5vw;
+}
+
+#heading-App {
+    font-size: 3vw;
+    /* background-color: aqua; */
+}
+
+#container-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    overflow: hidden;
+    /* background-color: aliceblue; */
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+}
+
+.quotes {
+    position: absolute;
+    top: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    padding: 0.2em;
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
+}
+
+.quotes-text {
+    font-size: 1.5vw;
+    font-weight: 800;
+    color: white;
 }
